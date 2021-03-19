@@ -5,7 +5,6 @@ const { Post, User, Comment, Vote } = require('../models');
 // call for the data from the homepage file to be 'rendered' onto the site
 router.get('/', (req, res) => {
     console.log(req.session);
-    
     Post.findAll({
       attributes: [
         'id',
